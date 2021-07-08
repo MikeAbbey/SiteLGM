@@ -9,3 +9,10 @@ function accordionChange(collapseID,buttonID){
 accordionChange('#flush-collapseOne','#firstAccordionButton');
 accordionChange('#flush-collapseTwo','#secondAccordionButton');
 accordionChange('#flush-collapseThree','#thirdAccordionButton');
+accordionChange('#flush-collapseFour','#fourthAccordionButton');
+accordionChange('#flush-collapseFive','#fifthAccordionButton');
+accordionChange('#flush-collapseSix','#sixthAccordionButton');
+accordionChange('#flush-collapseSeven','#seventhAccordionButton');
+accordionChange('#flush-collapseEight','#eighthAccordionButton');
+accordionChange('#flush-collapseNine','#ninthAccordionButton');
+accordionChange('#flush-collapseTen','#tenthAccordionButton');
