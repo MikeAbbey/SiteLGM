@@ -72,38 +72,93 @@
                     </div>
             </div>
             <div class="col-md-6">
-                <h1 class="mb-5">Contactati-ne acum si va vom raspunde in cel mai scurt timp!</h1>
-                <form >
-                    <!-- Name input -->
+                <h1 class="mb-5">Contacteaza-ne acum si iti vom raspunde in cel mai scurt timp!</h1>
+                <form action="send" enctype="multipart/form-data" method="POST" id="contact-form" >
+                  
                     <div class="form-outline mb-4">
-                    <input type="text" id="form4Example1" class="form-control" />
-                    <label class="form-label" for="form4Example1">Prenume</label>
-                    </div>
-                    
-                    <div class="form-outline mb-4">
-                        <input type="text" id="form4Example1" class="form-control" />
-                        <label class="form-label" for="form4Example1">Nume de Familie</label>
+                        <input name="nume" type="text" id="form4Example1" class="form-control" required
+                        oninvalid="this.setCustomValidity('Acest camp trebuie completat')"
+                        oninput="this.setCustomValidity('')" />
+                        <label class="form-label" for="form4Example1">Nume </label>
                         </div>
                     <!-- Email input -->
                     <div class="form-outline mb-4">
-                    <input type="email" id="form4Example2" class="form-control" />
-                    <label class="form-label" for="form4Example2">Adresa de email</label>
+                        <input name="adresa" type="email" id="form4Example2" class="form-control" required oninvalid="this.setCustomValidity('Acest camp trebuie completat')"
+                        oninput="this.setCustomValidity('')" />
+                        <label class="form-label" for="form4Example2">Adresa de email</label>
                     </div>
                 
                     <!-- Message input -->
                     <div class="form-outline mb-4">
-                    <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-                    <label class="form-label" for="form4Example3">Mesaj</label>
+                        <textarea name="mesaj" class="form-control" id="form4Example3" rows="4" required oninvalid="this.setCustomValidity('Acest camp trebuie completat')"
+                        oninput="this.setCustomValidity('')"></textarea>
+                        <label class="form-label" for="form4Example3">Mesaj</label>
                     </div>
-            
                 
                     <!-- Submit button -->
-                    <button type="submit" class="btn btn-warning btn-block mb-4 w-50">Trimite</button>
+                    <button type="submit" value="submit" class="btn btn-warning btn-block mb-4 w-50">Trimite</button>
                 </form>
+                <p id="js-form-response"></p>
           </div>
         </div>
         </div>
+        <footer class="text-center text-white" >
+            <!-- Grid container -->
+            <div class="container pt-4">
+              <!-- Section: Social media -->
+              <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+          
+                <!-- Twitter -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+          
+                <!-- Google -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-google"></i
+                ></a>
+          
+                <!-- Instagram -->
+                <a
+                  class="btn btn-link btn-floating btn-lg text-dark m-1"
+                  href="#!"
+                  role="button"
+                  data-mdb-ripple-color="dark"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+          
+            
+                
+              <!-- Section: Social media -->
+            </div>
+
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: #FEA82F;">
+              © 2021 Copyright:
+              <p>Light Advertising Gabriel</p>
+            </div>
+            <!-- Copyright -->
+          </footer>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js" async></script>
         <script src="scripts/hamburger.js" async></script>
+        <script src="scripts/form.js" ></script>
     </body>
 </html>
