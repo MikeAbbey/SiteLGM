@@ -6,7 +6,7 @@ const formEvent=form.addEventListener("submit", (event) =>{
     sendMail(mail);
 })
 const sendMail=(mail)=>{
-    fetch("https://mikeabbey.github.io/SiteLGM/contact.html/send",{
+    fetch("https://mikeabbey.github.io/SiteLGM/contact.html",{
         method: "post",
         body: mail,
     }).then((response)=>{
